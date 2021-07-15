@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="box">
+      <div class="search">
+        <h1 class="title" id="hello"></h1>
+        <blockquote>
+          <i class="quotes" id="quotes">
+            <!-- Random Quote Generated -->
+          </i>
+        </blockquote>
+        <input
+          type="text"
+          id="city"
+          class="city-input"
+          placeholder="Search for a City"
+        />
+        <button id="weatherButton" value="search" class="weather-button">
+          <i class="fas fa-search"></i>&nbspSearch
+        </button>
+      </div>
+      <div class="weather loading">
+        <h3 class="city-name">Weather in Cluj</h3>
+        <h1 class="temp">35°C</h1>
+        <div class="flex">
+          <img
+            src="https://openweathermap.org/img/wn/04n.png"
+            alt=""
+            class="icon"
+          />
+        </div>
+        <div class="description">Cloudy</div>
+        <div class="humidity">Humidity: 40%</div>
+        <div class="wind">Wind speed: 6.2 km/h</div>
+      </div>
+      <button class="forecast-button" id="forecast">
+        See forecast for the next 5 days
+      </button>
+    </div>
+    <div class="forecast-result"></div>
+
+    <div class="forecast-box hide-forecast">
+      <div class="forecast-card">
+        <!-- One day forecast -->
+        <div class="weather-forecast-0">
+          <div class="day-forecast-0"><b>Monday</b></div>
+          <div class="temp-forecast-0">35°C</div>
+          <div class="flex-forecast-0">
+            <img
+              src="https://openweathermap.org/img/wn/04n.png"
+              alt=""
+              class="icon-forecast-0"
+            />
+          </div>
+          <div class="description-forecast-0">Cloudy</div>
+        </div>
+        <!-- One day forecast -->
+
+        <!-- One day forecast -->
+        <div class="weather-forecast-1">
+          <div class="day-forecast-1"><b>Tuesday</b></div>
+          <div class="temp-forecast-1">35°C</div>
+          <div class="flex-forecast-1">
+            <img
+              src="https://openweathermap.org/img/wn/04n.png"
+              alt=""
+              class="icon-forecast-1"
+            />
+          </div>
+          <div class="description-forecast-1">Cloudy</div>
+        </div>
+        <!-- One day forecast -->
+
+        <!-- One day forecast -->
+        <div class="weather-forecast-2">
+          <div class="day-forecast-2"><b>Tuesday</b></div>
+          <div class="temp-forecast-2">35°C</div>
+          <div class="flex-forecast-2">
+            <img
+              src="https://openweathermap.org/img/wn/04n.png"
+              alt=""
+              class="icon-forecast-2"
+            />
+          </div>
+          <div class="description-forecast-2">Cloudy</div>
+        </div>
+        <!-- One day forecast -->
+
+        <!-- One day forecast -->
+        <div class="weather-forecast-3">
+          <div class="day-forecast-3"><b>Tuesday</b></div>
+          <div class="temp-forecast-3">35°C</div>
+          <div class="flex-forecast-3">
+            <img
+              src="https://openweathermap.org/img/wn/04n.png"
+              alt=""
+              class="icon-forecast-3"
+            />
+          </div>
+          <div class="description-forecast-3">Cloudy</div>
+        </div>
+        <!-- One day forecast -->
+
+        <!-- One day forecast -->
+        <div class="weather-forecast-4">
+          <div class="day-forecast-4"><b>Tuesday</b></div>
+          <div class="temp-forecast-4">35°C</div>
+          <div class="flex-forecast-4">
+            <img
+              src="https://openweathermap.org/img/wn/04n.png"
+              alt=""
+              class="icon-forecast-4"
+            />
+          </div>
+          <div class="description-forecast-4">Cloudy</div>
+        </div>
+        <!-- One day forecast -->
+      </div>
+    </div>
+    <script src="./script.js"></script>
+    <!-- <script src="forecast.js"></script> -->
+    <script src="./quote.js"></script>
+  </body>
+</html>
